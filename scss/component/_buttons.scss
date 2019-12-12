@@ -17,23 +17,38 @@
 }
 
 .default {
-  background-color: $color-font;
+  background-color: $default;
+   &:hover {
+     background-color: lighten($default-light, 15%);
+   }
 }
 
 .error {
-  background-color: $error-light;
+  background-color: $error;
+   &:hover {
+     backgorund-color: lighten($error-lighten, 15%);
+   }
 }
 
 .info {
-  background-color: $info-light;
+  background-color: $info;
+   &:hover {
+     background-color: lighten($info-lighten, 15%);
+   }
 }
 
 .success {
-  background-color: $success-light;
+  background-color: $success;
+   &:hover {
+     background-color: lighten($success-light, 15%);
+   }
 }
 
 .warning {
-  background-color: $warning-light;
+  background-color: $warning;
+   &:hover {
+     background-color: lighten($warning-light, 15%);
+   }
 }
 
 
