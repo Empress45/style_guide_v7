@@ -9,9 +9,9 @@
 .input{
   display: block;
   width: 94%;
-  margin: 10px auto 0;
+  margin: $gutter-s auto 0;
   border: none;
-  padding: 10px;
+  padding: $gutter-s;
   border-bottom: 5px solid $color-primary;
 }
 

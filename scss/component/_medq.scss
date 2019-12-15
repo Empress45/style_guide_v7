@@ -1,7 +1,7 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: 768px) {
+@media ($brk-pt-mq: 768px) {
 
 .container {
   $max-width: 1400px;
@@ -28,7 +28,7 @@
 }
 
 [class^=col] + [class^=col] {
-  margin-left: 10px;
+  margin-left: $gutter-s;
 }
 
 .col-1 {
@@ -90,11 +90,11 @@
 }
 
 .btn {
-  padding: 10px 30px;
+  padding: $gutter-s 30px;
 }
 
 .btn + .btn {
-  margin-left: 10px;
+  margin-left: $gutter-s;
 }
 
 .logo {
