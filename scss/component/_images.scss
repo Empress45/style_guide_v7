@@ -3,7 +3,7 @@
 /* ============================================= */
 
 .img-avatar {
-  display: block;
+  display: $disp;
   margin-left: auto;
   margin-right: auto;
   margin-top: $gutter-s;
@@ -12,7 +12,7 @@
 }
 
 .img-frame {
-  display: block;
+  display: $disp;
   margin-left: auto;
   margin-right: auto;
   margin-top: $gutter-s;
@@ -22,7 +22,7 @@
 }
 
 .img-logo {
-  display: block;
+  display: $disp;
   margin-left: auto;
   margin-right: auto;
 }
