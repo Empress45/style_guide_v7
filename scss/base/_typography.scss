@@ -23,7 +23,7 @@ a {
 
 .headline-primary {
   color: $color-primary;
-  margin-left: 10px;
+  margin-left: $gutter-s;
 }
 
 .headline-secondary {
@@ -40,8 +40,8 @@ a {
   font-size: 1.5em;
   font-weight: 300;
   font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
+  margin-left: $gutter-m;
+  padding-left: $gutter-m;
   border-left: 8px solid $color-primary;
   border-radius: 5px;
 }
