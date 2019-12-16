@@ -1,9 +1,10 @@
-/* Error: Expected string.
+/* Error: Can't find stylesheet to import.
  *   ,
- * 3 | @import 'base/index',
- *   |                      ^
+ * 2 | @import 'base/normalize',
+ *   |         ^^^^^^^^^^^^^^^^
  *   '
- *   scss\styles.scss 3:22  root stylesheet */
+ *   scss\base\_index.scss 2:9  @import
+ *   scss\styles.scss 3:9       root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected string.\a   \2577 \a 3 \2502  @import 'base/index',\d\a   \2502                       ^\a   \2575 \a   scss\\styles.scss 3:22  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import 'base/normalize',\d\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\base\\_index.scss 2:9  @import\a   scss\\styles.scss 3:9       root stylesheet";
 }
