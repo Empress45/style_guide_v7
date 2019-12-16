@@ -7,8 +7,7 @@
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
+  @include flex;
   padding: 1em $gutter-s;
 }
 
@@ -78,15 +77,15 @@
 /*      Media Queries        */
 /*===========================*/
 
-@include $brk-pt-mq {
+@include mq($brk-pt-mq) {
   .container {
-    @include center;
-    display: block;
+    max-width: $max-width;
+     @include centered;
   }
+}
 
 .centered {
-  display: block;
-  @include center;
+  @include centered;
 }
 
 .row {
