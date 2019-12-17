@@ -1,9 +1,11 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 |         "components/index";
- *   |         ^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\styles.scss 5:9  root stylesheet */
+/* Error: Expected identifier.
+ *    ,
+ * 14 |   @include $brk-pt-mq {
+ *    |            ^
+ *    '
+ *   scss\component\_buttons.scss 14:12  @import
+ *   scss\component\_index.scss 2:9      @import
+ *   scss\styles.scss 5:9                root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502          \"components/index\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\styles.scss 5:9  root stylesheet";
+  content: "Error: Expected identifier.\a    \2577 \a 14 \2502    @include $brk-pt-mq {\d\a    \2502             ^\a    \2575 \a   scss\\component\\_buttons.scss 14:12  @import\a   scss\\component\\_index.scss 2:9      @import\a   scss\\styles.scss 5:9                root stylesheet";
 }
