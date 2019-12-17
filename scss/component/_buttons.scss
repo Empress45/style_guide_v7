@@ -11,8 +11,8 @@
   text-transform: uppercase;
   border-radius: 5px;
   transition: background-color, .3s ease-in-out;
-  @include $brk-pt-mq {
-    padding: $gutter-s 30px;
+  @include tabletMq {
+   padding: $gutter-s 30px;
    }
 }
 
@@ -26,14 +26,14 @@
 .error {
   background-color: $error;
    &:hover {
-     backgorund-color: lighten($error-lighten, 15%);
+     background-color: lighten($error-light, 15%);
    }
 }
 
 .info {
   background-color: $info;
    &:hover {
-     background-color: lighten($info-lighten, 15%);
+     background-color: lighten($info-light, 15%);
    }
 }
 
@@ -56,7 +56,7 @@
 /*              Media Queries                    */
 /* ============================================= */
 
-@include $brk-pt-mq {
+@include tabletMq {
   .btn + .btn {
     margin-left: $gutter-s;
   }

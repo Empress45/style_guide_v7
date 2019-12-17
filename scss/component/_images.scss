@@ -21,7 +21,7 @@
   @include centered;
 }
 
-@include mq($brk-pt-mq) {
+@include tabletMq {
   .logo {
     margin-left: initial;
     margin-right: initial;

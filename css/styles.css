@@ -1,11 +1,14 @@
-/* Error: Expected identifier.
+/* Error: Undefined mixin.
  *    ,
- * 14 |   @include $brk-pt-mq {
- *    |            ^
+ * 9  | /    @include mq ($brk-pt-mq) {
+ * 10 | |      flex-direction : row;
+ * 11 | |      justify-content: flex-end;
+ * 12 | |      align-items: center;
+ * 13 | \    }
  *    '
- *   scss\component\_buttons.scss 14:12  @import
- *   scss\component\_index.scss 2:9      @import
- *   scss\styles.scss 5:9                root stylesheet */
+ *   scss\component\_navigation.scss 9:4  @import
+ *   scss\component\_index.scss 6:9       @import
+ *   scss\styles.scss 5:9                 root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -15,5 +18,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a    \2577 \a 14 \2502    @include $brk-pt-mq {\d\a    \2502             ^\a    \2575 \a   scss\\component\\_buttons.scss 14:12  @import\a   scss\\component\\_index.scss 2:9      @import\a   scss\\styles.scss 5:9                root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 9  \2502  \250c     @include mq ($brk-pt-mq) {\a 10 \2502  \2502       flex-direction : row;\a 11 \2502  \2502       justify-content: flex-end;\a 12 \2502  \2502       align-items: center;\a 13 \2502  \2514     }\a    \2575 \a   scss\\component\\_navigation.scss 9:4  @import\a   scss\\component\\_index.scss 6:9       @import\a   scss\\styles.scss 5:9                 root stylesheet";
 }

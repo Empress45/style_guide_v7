@@ -21,7 +21,7 @@
   flex-direction: column;
 }
 
-@mixin mq($brk-pt-mq) {
+@mixin tabletMq {
   @media(min-width: $brk-pt-mq) {
     @content;
   }

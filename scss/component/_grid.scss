@@ -75,7 +75,7 @@
 /*      Media Queries        */
 /*===========================*/
 
-@include mq($brk-pt-mq) {
+@include tabletMq {
   .container {
     max-width: $max-width;
      @include centered;

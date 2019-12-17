@@ -6,7 +6,7 @@
   padding-left: 0;
   flex-basis: 100%;
   @include flex;
-   @include mq ($brk-pt-mq) {
+   @include tabletMq {
      flex-direction : row;
      justify-content: flex-end;
      align-items: center;
@@ -27,4 +27,3 @@
 
     }
   }
-}
