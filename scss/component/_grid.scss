@@ -7,7 +7,6 @@
 }
 
 .row {
-  flex-direction: row;
   padding: 1em $gutter-s;
 }
 
@@ -135,7 +134,7 @@
 }
 
 .col-9 {
-  flex-basis: 75.00%
+  flex-basis: 75.00%;
 }
 
 .col-10 {

@@ -22,7 +22,7 @@
 }
 
 @mixin tabletMq {
-  @media(min-width: $brk-pt-mq) {
+  @media (min-width: $brk-pt-mq) {
     @content;
   }
 }
