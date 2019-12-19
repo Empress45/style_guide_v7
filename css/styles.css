@@ -1,7 +1,7 @@
 /* Error: Undefined variable.
  *    ,
- * 25 |   @media(min-width: $brk-pt) {
- *    |                     ^^^^^^^
+ * 25 |   @media(min-width: $brk-pt-mq) {
+ *    |                     ^^^^^^^^^^
  *    '
  *   scss\utilities\_mixins.scss 25:21  tabletMq()
  *   scss\component\_buttons.scss 14:3  @import
@@ -16,5 +16,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 25 \2502    @media(min-width: $brk-pt) {\d\a    \2502                      ^^^^^^^\a    \2575 \a   scss\\utilities\\_mixins.scss 25:21  tabletMq()\a   scss\\component\\_buttons.scss 14:3  @import\a   scss\\component\\_index.scss 2:9     @import\a   scss\\styles.scss 5:9               root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 25 \2502    @media(min-width: $brk-pt-mq) {\d\a    \2502                      ^^^^^^^^^^\a    \2575 \a   scss\\utilities\\_mixins.scss 25:21  tabletMq()\a   scss\\component\\_buttons.scss 14:3  @import\a   scss\\component\\_index.scss 2:9     @import\a   scss\\styles.scss 5:9               root stylesheet";
 }
