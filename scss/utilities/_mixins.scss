@@ -1,6 +1,6 @@
 @mixin centered {
   width: 90%;
-  max-width: $brk-pt-mq;
+  max-width: $brk-pt;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -22,7 +22,7 @@
 }
 
 @mixin tabletMq {
-  @media(min-width: $brk-pt-mq) {
+  @media(min-width: $brk-pt) {
     @content;
   }
 }
