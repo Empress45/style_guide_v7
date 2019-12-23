@@ -7,6 +7,7 @@
 }
 
 .row {
+  @include flex;
   padding: 1em $gutter-s;
 }
 
@@ -86,18 +87,18 @@
 }
 
 .row {
-  display: flex;
   flex-direction: row;
+  display: flex;
 }
 
-[class^=col] {
+[class^="col"] {
   display: flex;
   justify-content: center;
   margin-top: 0;
   align-items: center;
 }
 
-[class^=col] + [class^=col] {
+[class^="col"] + [class^="col"] {
   margin-left: $gutter-s;
 }
 
@@ -110,7 +111,7 @@
 }
 
 .col-3 {
-  flex-basis: 25.00%;
+  flex-basis: 25%;
 }
 
 .col-4 {
@@ -122,7 +123,7 @@
 }
 
 .col-6 {
-  flex-basis: 50.00%;
+  flex-basis: 50%;
 }
 
 .col-7 {
@@ -134,7 +135,7 @@
 }
 
 .col-9 {
-  flex-basis: 75.00%;
+  flex-basis: 75%;
 }
 
 .col-10 {

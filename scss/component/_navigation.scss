@@ -6,24 +6,31 @@
   padding-left: 0;
   flex-basis: 100%;
   @include flex;
-   @include tabletMq {
-     flex-direction : row;
-     justify-content: flex-end;
-     align-items: center;
-   }
 
   &-link {
-  text-align: center;
-  border-radius: 5px;
-  padding: $gutter-s 0;
-  display: block;
-  width: 100%;
-  transition: background-color .2s ease-in-out, color .2s ease-in-out;
-}
+   text-align: center;
+   border-radius: 5px;
+   padding: $gutter-s 0;
+   display: block;
+   width: 100%;
+   transition: background-color .2s ease-in-out, color .2s ease-in-out;
+  }
 
   &-link:hover {
-  color: $warning;
-  background-color: $color-primary;
-
+    color: $warning;
+    background-color: $color-primary;
     }
   }
+
+  @include tabletMq {
+    .nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+  &-link {
+    flex-basis: 100%;
+    
+    }
+  }
+}

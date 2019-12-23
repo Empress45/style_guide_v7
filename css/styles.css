@@ -562,8 +562,8 @@ a {
 }
 
 .row {
-  display: flex;
   flex-direction: row;
+  display: flex;
 }
 
 [class^=col] {
@@ -673,13 +673,6 @@ a {
   flex-basis: 100%;
   display: block;
   flex-direction: column;
-}
-@media (min-width: 768px) {
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
 }
 .nav-link {
   text-align: center;
