@@ -19,11 +19,13 @@
     color: $white;
     background-color: $color-primary;
   }
+
   @media(min-width: $brk-pt) {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
+  
   &-link {
     flex-basis: 100px;
   }
