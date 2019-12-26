@@ -4,6 +4,10 @@
 
 .container {
   padding: 0 $gutter-s;
+  @media (min-width: $brk-pt) {
+    max-width: $max-width;
+    @include centered;
+  }
 }
 
 .row {
@@ -67,10 +71,6 @@
   background-color: #80e8d1;
 }
 
-.card {
-  flex-basis: 100%;
-}
-
 /*===========================*/
 /*      Media Queries        */
 /*===========================*/
@@ -79,7 +79,6 @@
    max-width: $max-width;
      @include centered;
   }
-}
 
 .centered {
   @include centered;
@@ -147,4 +146,6 @@
 
 .col-12 {
   flex-basis: 100%;
+
+  }
 }
