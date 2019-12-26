@@ -4,7 +4,7 @@
 
 .container {
   padding: 0 $gutter-s;
-  @media (min-width: $brk-pt) {
+  @include tabletMq {
     max-width: $max-width;
     @include centered;
   }
