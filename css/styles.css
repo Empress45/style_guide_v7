@@ -477,6 +477,8 @@ a {
 }
 
 .row {
+  display: block;
+  flex-direction: column;
   padding: 1em 10px;
 }
 
@@ -685,6 +687,17 @@ a {
 .nav-link:hover {
   color: #fd7856;
   background-color: #58e1c1;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav-link {
+    flex-basis: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

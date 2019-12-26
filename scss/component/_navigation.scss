@@ -5,7 +5,7 @@
 .nav {
   padding-left: 0;
   flex-basis: 100%;
-  @include flex;
+  @include flexy;
 
   &-link {
    text-align: center;
@@ -30,7 +30,7 @@
 
   &-link {
     flex-basis: 100%;
-    
+
     }
   }
 }

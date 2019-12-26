@@ -7,7 +7,7 @@
 }
 
 .row {
-  @include flex;
+  @include flexy;
   padding: 1em $gutter-s;
 }
 
