@@ -21,8 +21,8 @@
   @include centered;
 }
 
-@include tabletMq {
-  .logo {
+.logo {
+  @include tabletMq {
     margin-left: initial;
     margin-right: initial;
   }
