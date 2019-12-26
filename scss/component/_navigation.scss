@@ -1,153 +1,30 @@
 /* ============================================= */
-/*              Grid System                      */
+/*              Navigation                       */
 /* ============================================= */
 
-.container {
-  padding: 0 $gutter-s;
-}
-
-.row {
+.nav {
   @include flexy;
-  padding: 1em $gutter-s;
-}
-
-[class^=col] {
-  margin-top: $gutter-s;
+  padding-left: 0;
   flex-basis: 100%;
-  min-height: 25px;
-  padding: $gutter-s;
-  border-radius: 5px;
-}
-
-.theme.col-1 {
-  background-color: $info-light;
-}
-
-.theme.col-2 {
-  background-color: $warning-light;
-}
-
-.theme.col-3 {
-  background-color: #deb2ee;
-}
-
-.theme.col-4 {
-  background-color: #7ee6fd;
-}
-
-.theme.col-5 {
-  background-color: #88d9a0;
-}
-
-.theme.col-6 {
-  background-color: #4da2bb;
-}
-
-.theme.col-7 {
-  background-color: #ec9fa3;
-}
-
-.theme.col-8 {
-  background-color: #fd9f85;
-}
-
-.theme.col-9 {
-  background-color: $error-light;
-}
-
-.theme.col-10 {
-  background-color: $success-light;
-}
-
-.theme.col-11 {
-  background-color: $default-light;
-}
-
-.theme.col-12 {
-  background-color: #80e8d1;
-}
-
-.card {
-  flex-basis: 100px;
-}
-
-/*===========================*/
-/*      Media Queries                               */
-/*===========================*/
-
-@include tabletMq {
-  @media(min-width: $brk-pt) {
-  .container {
-    max-width: $max-width;
-     @include centered;
+  &-link {
+    text-align: center;
+    border-radius: 5px;
+    padding: $gutter-s 0;
+    display: block;
+    width: 100%;
+    transistion: background-color .2s ease-in-out, color .2s ease-in-out;
     }
+
+  &-link:hover {
+    color: $white;
+    background-color: $color-primary;
   }
-}
-
-.centered {
-  @include centered;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-[class^="col"] {
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-  align-items: center;
-}
-
-[class^="col"] + [class^="col"] {
-  margin-left: $gutter-s;
-}
-
-.col-1 {
-  flex-basis: 8.33%;
-}
-
-.col-2 {
-  flex-basis: 16.67%;
-}
-
-.col-3 {
-  flex-basis: 25%;
-}
-
-.col-4 {
-  flex-basis: 33.33%;
-}
-
-.col-5 {
-  flex-basis: 41.67%;
-}
-
-.col-6 {
-  flex-basis: 50%;
-}
-
-.col-7 {
-  flex-basis: 58.33%;
-}
-
-.col-8 {
-  flex-basis: 66.67%;
-}
-
-.col-9 {
-  flex-basis: 75%;
-}
-
-.col-10 {
-  flex-basis: 83.33%;
-}
-
-.col-11 {
-  flex-basis: 91.67%;
-}
-
-.col-12 {
-  flex-basis: 100%;
+  @media(min-width: $brk-pt) {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &-link {
+    flex-basis: 100px;
+  }
 }
