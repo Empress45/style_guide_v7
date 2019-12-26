@@ -17,8 +17,8 @@
 
 
 @mixin flexy() {
-  display: block;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
 }
 
 @mixin tabletMq {

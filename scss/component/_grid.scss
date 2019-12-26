@@ -74,10 +74,9 @@
 /*===========================*/
 /*      Media Queries        */
 /*===========================*/
-
 @include tabletMq {
-  .container {
-    max-width: $max-width;
+ .container {
+   max-width: $max-width;
      @include centered;
   }
 }
@@ -87,8 +86,8 @@
 }
 
 .row {
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
 }
 
 [class^="col"] {
