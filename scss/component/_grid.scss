@@ -72,7 +72,7 @@
 }
 
 /*===========================*/
-/*      Media Queries        */
+/*      Media Queries                               */
 /*===========================*/
 @include tabletMq {
  .container {
@@ -89,14 +89,14 @@
   flex-direction: row;
 }
 
-[class^="col"] {
+[class^=col] {
   display: flex;
   justify-content: center;
   margin-top: 0;
   align-items: center;
 }
 
-[class^="col"] + [class^="col"] {
+[class^=col] + [class^=col] {
   margin-left: $gutter-s;
 }
 
