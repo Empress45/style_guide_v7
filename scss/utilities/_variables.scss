@@ -25,11 +25,11 @@ $theme-colors: (
 'col-11'#51ddfc,
 'col-12'#80e8d1);
 
-$default: #51ddfc;
-$error: #e4757a;
-$info: #927bc1;
-$success: #63cc82;
-$warning: #fd7856;
+$default: #51ddfc;     // Teal //
+$error: #e4757a;       // Red //
+$info: #927bc1;        // Violet //
+$success: #63cc82;  // Green //
+$warning: #fd7856;  // Orange //
 
 $default-light: lighten($default, 15%);
 $error-light: lighten($error, 15%);
