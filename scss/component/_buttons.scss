@@ -16,35 +16,35 @@
 .default {
   background-color: $default;
    &:hover {
-     background-color: lighten($default-light, 15%);
+     background-color: $default-light;
    }
 }
 
 .error {
   background-color: $error;
    &:hover {
-     background-color: lighten($error-light, 15%);
+     background-color: $error-light;
    }
 }
 
 .info {
   background-color: $info;
    &:hover {
-     background-color: lighten($info-light, 15%);
+     background-color: $info-light;
    }
 }
 
 .success {
   background-color: $success;
    &:hover {
-     background-color: lighten($success-light, 15%);
+     background-color: $success-light;
    }
 }
 
 .warning {
   background-color: $warning;
    &:hover {
-     background-color: lighten($warning-light, 15%);
+     background-color: $warning-light;
    }
 }
 
